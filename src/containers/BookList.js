@@ -1,5 +1,7 @@
 //Run a list of books
 import React from 'react';
+import { connect } from 'react-redux';
+
 
 class BookList extends React.Component {
 
@@ -20,4 +22,11 @@ class BookList extends React.Component {
   }
 }
 
-export default BookList;
+function mapStateToProps(state) {
+  //Whatever is returned from this will show up as props
+  return {
+    books: state.books
+  }
+}
+
+export default connect(mapStateToProps)(BookList);
