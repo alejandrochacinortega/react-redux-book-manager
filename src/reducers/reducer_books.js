@@ -1,3 +1,8 @@
-/**
- * Created by omar on 07/02/17.
- */
+export default function() {
+  return [
+    { title: 'Emotional Intelligence' },
+    { title: 'Inferno' },
+    { title: 'Narnia' },
+    { title: 'Harry Potter' },
+  ]
+}
